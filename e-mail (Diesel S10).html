@@ -1,0 +1,126 @@
+<html lang="pt-BR">
+	<head>
+		<title>Criar solicitação de Diesel S10</title>
+		<meta charset="UTF-8">
+		<style>
+			.container{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				font-family: arial;
+			}
+			
+			.formulario{
+				max-width: 40%;
+				max-height: 60%;
+				width: 200px;
+				height: 500px;
+				position: absolute;
+				border-radius: 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background-color: white;
+				opacity: 0.9;
+				font-family: arial;
+				font-size: 20px;
+				box-shadow: 0px 20px 20px grey;
+			}
+			.sistema{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0px 10px 10px grey;
+				
+			}
+			#fundo{
+				width: 100%;
+				height: 600px;
+				opacity: 0.2;
+			}
+			.icon{
+				width: 100px;
+				height: 100px;
+				padding-bottom: 20px;
+			}
+			#horario{
+				padding-top: 50px;
+				padding-bottom: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			#manha:hover{
+				color: black;
+				box-shadow: 0px 0px 14px #D7E113;
+			}
+			#tarde:hover{
+				color: black;
+				box-shadow: 0px 0px 14px #CE4704;
+			}
+			#botao{
+				width: 10rem;
+				height: 30px;
+				font-family: consolas;
+				font-size: 20px;
+			}
+			#botao:hover{
+				background-color: grey;
+			}
+			#mensagem{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="container">
+			<div class="titulo">
+				<h1>Enviar solicitação de Diesel S10</h1>
+				<p>Este programa foi criado para fazer solicitação de Diesel S10 na FILIAL III.</p>
+			</div>
+			<div class="sistema">
+				<img id="fundo" src="http://www.xp3.com.br/blog/wp-content/uploads/2019/07/shutterstock_405236368-648x410-1.jpg">
+						<form class="formulario" action="" onsubmit="javascript:enviar()">
+							<img class="icon" src="data:image/png;base64,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">
+							<input type="date" id="data" name="data" required="" min="1997-01-01" max="2030-12-31" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}">
+							
+							<div id="horario">
+								<img class="icon" src="data:image/png;base64,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">
+								<div>
+									<input type="radio" id="manha" name="periodo" value="manha" required="">
+									<label id="manha" for="manha"><strong>Manhã</strong></label>
+									<input type="radio" id="tarde" name="periodo" value="tarde" required="">
+									<label id="tarde" for="tarde"><strong>Tarde</strong></label>
+								</div>
+							</div>
+							<input id="botao" type="submit" value="Solicitar">
+						</form>
+			</div>
+				<p id="mensagem">*Preencha os campos necessários para criar o e-mail solicitando o reabastecimento do Diesel S10!</p>
+			<script>
+				/*Email.send({
+				Host : "smtp.yourisp.com",
+				Username : "username",
+				Password : "password",
+				To : 'them@website.com',
+				From : "you@isp.com",
+				Subject : "This is the subject",
+				Body : "And this is the body"
+				}).then(
+				  message => alert(message)
+				);*/
+				function enviar(){
+					//var data = document.querySelector('input[name="data"]')
+					var data = document.querySelector('input[name="data"]').value
+					var data_br = data.split('-').reverse().join('/')
+					var periodo = document.querySelector('input[name="periodo"]:checked')
+					window.open(`mailto: ?subject=Solicitação de Diesel S10 para o tanque de Diesel da FILIAL III&body=Bom dia! Solicitamos o abastecimento do tanque de 15.000L (quinze mil litros) de Diesel S10 da FILIAL III. O produto será utilizado para o abastecimento da Frota própria. Sobre orientação precisamos adquirir o combustível para consumo (Código do produto: 123123) da EMPRESA X. Agendar a entrega para o dia: ${data_br}, no período da ${periodo.value}. Muito obrigado!`);
+				}
+			</script>
+		</body>
+</html>
